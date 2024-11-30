@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   height:100%;
+}
+
+.header {
+	padding: 10px;
+	text-align: center;
+	text-shadow: -1px 0 #ee5902, 0 1px #ee5902, 1px 0 #ee5902, 0 -1px #ee5902;
+	background: #ee5902;
+	color: #321818;
+	background-image: url('../img/header.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: contain;
+}
+
+.navbar {
+	display: flex;
+	background-color: #321818;
+}
+
+.navbar a {
+	color: white;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navbar a:hover {
+	background-color: #ead7d4;
+	color: black;
+}
+
+.row {  
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main {
+	padding: 20px;
+	flex: 1 0 auto;
+	background-color: #ffdbbb;
+}
+
+.main_author {
+	padding: 20px;
+	flex: 1 0 auto;
+	text-align: center;
+	background-image: url('../img/author.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 46%;
+	font-size: 150%;
+	background-color:  #ffdbbb;/*#ffede1;*/
+}
+
+.footer {
+	display: flex;
+	padding: 10px;
+	text-align: center;
+	font-family: Pacifico;
+	background: #aa8a87;
+	flex: 0 0 auto;
+	margin-bottom: 0;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.row, .navbar {   
+		flex-direction: column;
+	}
+	[class*=""] {
+		width: 100%;
+	}
+	h1 {
+		font-size: 170%;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.row, .navbar {   
+		flex-direction: column;
+	}
+	[class*=""] {
+		width: 100%;
+	}
+	h1 {
+		font-size: 170%;
+	}
+}
+
+
+h1 {
+	font-family: Nunito;
+}
+
+h2 {
+	font-family: Pacifico;
+	font-size: 150%
+}
+
+p {
+	font-family: Nunito;
+	font-size: 120%;
+}
+
+img {
+	width: 50%;
+	height: 50%;
+	object-fit: contain;
+}
+
+h2.author{
+	text-shadow: 5px 5px 7px  #ffdbbb;
+	text-shadow: -1px 0  #ffdbbb, 0 1px #ffdbbb, 1px 0 #ffdbbb, 0 -1px #ffdbbb;
+}
+
+p.author{
+	text-shadow: 2px 2px 3px  #ffdbbb;;
+	text-shadow: -1px 0 #ffdbbb, 0 1px #ffdbbb, 1px 0 #ffdbbb, 0 -1px #ffdbbb;
+}
+
+.text {
+	font-family: Nunito;
+	font-size: 120%;
+}
+
+.input {
+	font-family: Nunito;
+	font-size: 90%;
+}
