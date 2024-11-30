@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/jpg" href="../img/fav.png">
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap" rel="stylesheet">
+		<title>Лабораторная работа №6</title>
+		<script src="../js/lab6_1_10.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Алгоритмизация и программирование</h1>
+				<p style="font-size:150%;"><b>Лабораторная работа №6</b></p>
+				<p style="font-size:150%;"><b><i>Функции</i></b></p>
+			</div>
+			<div class="navbar">
+				<a href="../index.html">Главная</a>
+				<a href="#">Задание 1</a>
+				<a href="answer2.html">Задание 2</a>
+				<a href="answer3.html">Задание 3</a>
+				<a href="author.html">Автор</a>
+			</div>
+			<div class="row">
+				<div class="main">
+					<h2 style="text-align:center;">Задание 1</h2>
+					<p>Написать функцию sign(x). sign(x)=1, если x>0, sign(x)=0 во всех остальных случаях.<br>Вычислить для чисел A,B,C sign(A)+sign(B)+sign(C).</p>
+					<p>Введите целые числа:</p>
+					<div class="text">
+						<label for="numberA">A = </label>
+						<input class="input" type="text" id="numberA" value=""><br>
+						<label for="numberB">B = </label>
+						<input class="input" type="text" id="numberB" value=""><br>
+						<label for="numberC">C = </label>
+						<input class="input" type="text" id="numberC" value="">
+						<button class="input" onClick="getSign()"> Ввод </button><br>
+					</div>
+					<p>Результат вычислений:</p>
+					<div class="text" id="resultContainer"></div><br>
+				</div>
+			</div>
+			<div class="footer">
+				<h3>© Koldomaeva, 2024</h3>
+			</div>
+		</div>
+	</body>
+</html>

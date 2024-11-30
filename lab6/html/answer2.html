@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/jpg" href="../img/fav.png">
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap" rel="stylesheet">
+		<title>Лабораторная работа №6</title>
+		<script src="../js/lab6_2_10.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Алгоритмизация и программирование</h1>
+				<p style="font-size:150%;"><b>Лабораторная работа №6</b></p>
+				<p style="font-size:150%;"><b><i>Функции</i></b></p>
+			</div>
+			<div class="navbar">
+				<a href="../index.html">Главная</a>
+				<a href="answer1.html">Задание 1</a>
+				<a href="#">Задание 2</a>
+				<a href="answer3.html">Задание 3</a>
+				<a href="author.html">Автор</a>
+			</div>
+			<div class="row">
+				<div class="main">
+					<h2 style="text-align:center;">Задание 2</h2>
+					<p>Дан массив A размера N (N — четное число).<br> Вывести его элементы с четными номерами в порядке возрастания номеров: A2, A4, A6, . . ., AN .<br> Поменять местами его минимальный и максимальный элементы.</p>
+					<p>Введите:</p>
+					<div class="text">
+						<label for="numberN">Целое четное число N больше 0</label><br>
+						<input class="input" type="text" id="numberN" value="">
+						<button class="input" onClick="getArray()"> Ввод </button><br>
+					</div>
+					<p>Сгенерированный массив случайных чисел от 1 до 20 заданной длины:</p>
+					<div class="text" id="resultContainer"></div><br>
+					<div class="text">
+						<button class="input" onClick="outputElements()"> Вывод </button><br>
+					</div>
+					<p>Элементы с четными номерами:</p>
+					<div class="text" id="answerContainer"></div><br>
+					<div class="text">
+						<button class="input" onClick="changeArray()"> Поменять </button><br>
+					</div>
+					<p>Новый массив:</p>
+					<div class="text" id="masContainer"></div>
+				</div>
+			</div>
+			<div class="footer">
+				<h3>© Koldomaeva, 2024</h3>
+			</div>
+		</div>
+	</body>
+</html>
